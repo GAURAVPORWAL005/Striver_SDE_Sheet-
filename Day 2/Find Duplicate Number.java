@@ -15,3 +15,23 @@ class Solution {
 }
 
 // Time complexity => O(nlogn)
+
+
+// Optimized Approach
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int ans = 0;
+        int[] res = new int[nums.length];
+        for(int i=0;i<nums.length;i++){
+              if(res[nums[i]] == 1){
+                ans = nums[i];
+            }
+            res[nums[i]] = 1;
+           
+           
+        }
+            return ans;
+    }
+}
+
+// Time complexity => O(n)
