@@ -27,7 +27,7 @@ class Solution {
             }
             else{
                 profit = prices[i] - current;
-                max = Math.max(profit, max);
+                max = Math.  max(profit, max);
             }
         }
         return max;
@@ -35,3 +35,4 @@ class Solution {
 }
 
 // Time complexity => O(n)
+// Space complexity=> O(n).
